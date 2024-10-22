@@ -1,7 +1,7 @@
 {
-    "name": "curl-generator",
-    "author": "albertodeagostini.dev@gmail.com",
-    "version": "0.4.1",
+    "name": "curl-generator-single-quotes",
+    "author": "hello@hacker-vaillant.org",
+    "version": "0.4.2",
     "main": "dist/curl-generator.cjs.js",
     "module": "dist/curl-generator.esm.js",
     "browser": "dist/curl-generator.umd.js",
@@ -32,10 +32,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/albertodeago/curl-generator.git"
+        "url": "https://github.com/hack3rvaillant/curl-generator.git"
     },
     "bugs": {
-        "url": "https://github.com/albertodeago/curl-generator/issues"
+        "url": "https://github.com/hack3rvaillant/curl-generator/issues"
     },
-    "homepage": "https://github.com/albertodeago/curl-generator"
+    "homepage": "https://github.com/hack3rvaillant/curl-generator"
 }

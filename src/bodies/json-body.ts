@@ -27,5 +27,5 @@ export function jsonBodyToString(body: CurlJsonBody): string {
 }
 
 export function jsonBodyToCommand(body: CurlJsonBody): string {
-  return `-d "${jsonBodyToString(body)}"`;
+  return `-d '${jsonBodyToString(body)}'`;
 }
