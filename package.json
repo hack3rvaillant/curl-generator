@@ -1,7 +1,7 @@
 {
     "name": "curl-generator-single-quotes",
     "author": "hello@hacker-vaillant.org",
-    "version": "0.4.2",
+    "version": "0.4.3",
     "main": "dist/curl-generator.cjs.js",
     "module": "dist/curl-generator.esm.js",
     "browser": "dist/curl-generator.umd.js",
