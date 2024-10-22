@@ -22,7 +22,7 @@ function isCurlJsonBody(body) {
     return typeof body === "object" && body !== null && "type" in body && body.type === "json" && "content" in body;
 }
 function jsonContentToString(content) {
-    return JSON.stringify(content).replace(/([\\"])/g, "\\$1");
+    return JSON.stringify(content).replace(/([\\'])/g, "\\$1");
 }
 function jsonBodyToString(body) {
     return jsonContentToString(body.content);
@@ -109,7 +109,7 @@ var getCurlHeaders = function (headers) {
     var result = "";
     if (headers) {
         Object.keys(headers).map(function (val) {
-            result += "" + slash + newLine + " -H '" + val + ": " + headers[val].replace(/(\\|")/g, "\\$1") + "'";
+            result += "" + slash + newLine + " -H '" + val + ": " + headers[val].replace(/(\\|')/g, "\\$1") + "'";
         });
     }
     return result;

@@ -50,7 +50,7 @@ exports[`get2 1`] = `
 exports[`getEscapeHeaders 1`] = `
 "curl https://jsonplaceholder.typicode.com/todos/1 \\
  -X GET \\
- -H 'key: a \\"strange\\" value'"
+ -H 'key: a "strange" value'"
 `;
 
 exports[`getWithHeaders 1`] = `
@@ -63,7 +63,7 @@ exports[`jsonBody 1`] = `
 "curl https://jsonplaceholder.typicode.com/posts \\
  -X POST \\
  -H 'Content-Type: application/json' \\
- -d '{\\"name\\":\\"foo\\"}'"
+ -d '{"name":"foo"}'"
 `;
 
 exports[`opt1 1`] = `
@@ -82,21 +82,21 @@ exports[`patch1 1`] = `
 "curl https://jsonplaceholder.typicode.com/posts/1 \\
  -X PATCH \\
  -H 'Content-type: application/json; charset=UTF-8' \\
- -d '{\\"title\\":\\"foo patched\\"}'"
+ -d '{"title":"foo patched"}'"
 `;
 
 exports[`post1 1`] = `
 "curl https://jsonplaceholder.typicode.com/posts \\
  -X POST \\
  -H 'Content-type: application/json; charset=UTF-8' \\
- -d '{\\"id\\":\\"123-456-789\\",\\"key1\\":\\"value 1\\",\\"key2\\":\\"a \\\\\\"complex\\\\\\" value\\"}'"
+ -d '{"id":"123-456-789","key1":"value 1","key2":"a \\\\"complex\\\\" value"}'"
 `;
 
 exports[`put1 1`] = `
 "curl https://jsonplaceholder.typicode.com/posts/1 \\
  -X PUT \\
  -H 'Content-type: application/json; charset=UTF-8' \\
- -d '{\\"id\\":1,\\"title\\":\\"foo\\",\\"body\\":\\"barzzz\\",\\"userId\\":1}'"
+ -d '{"id":1,"title":"foo","body":"barzzz","userId":1}'"
 `;
 
 exports[`rawBody1 1`] = `
